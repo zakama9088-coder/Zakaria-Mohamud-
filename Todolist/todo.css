@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Todo-list{
+    background-color:  rgb(33, 31, 43);
+    min-height: 100vh;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+
+
+}
+
+.title h1{
+    /* background-color: blue; */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgba(240, 255, 255, 0.833);   
+    margin-bottom: 20px;
+    
+}
+
+.input-con{
+    /* background-color: black; */
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+.input-con input{
+    width: 70%;
+    padding: 10px 12px;
+    border: 1px solid rgb(142, 141, 141);
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+    color: beige;
+    font-size: 15px;
+    transition: all .4s ease;
+}
+.input-con input:focus{
+    border: 1px solid rgb(157, 184, 239);  
+}
+
+.input-con .addBtn{
+    background-color: rgb(71, 218, 71);
+     padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: black;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 17px;
+    transition: all .4s ease;
+
+}
+.input-con .addBtn:hover{
+    background-color:rgb(33, 154, 33) ;
+}
+
+.tasks-con{
+    /* background-color: red; */
+    width: 70%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.tasks-con .row{
+    background-color: white;
+    padding: 10px 15px;
+    width: 90%;
+    margin: 5px auto ;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   gap: 20px;
+}
+.row p{
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.row .button{
+    /* background-color: blue; */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.button i{
+    font-size: 20px;
+    background-color:transparent;
+    width: 50px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.button .fa-solid.fa-check:hover{
+    color: rgb(59, 227, 59);
+}
+
+
+.button .fa-solid.fa-trash-can:hover{
+    color: rgb(247, 59, 59);
+}
